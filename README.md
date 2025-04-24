@@ -17,11 +17,11 @@ Fique à vontade para explorar, sugerir melhorias ou contribuir com novas ideias
 
 Clique nos links abaixo para visualizar cada projeto em funcionamento:
 
-- [01 - Lista de Tarefas a serem feitas](https://lucasgfoli.github.io/Javascript-projects/11-todo-list/)
+- [01 - Lista de Tarefas a serem feitas](https://lucasgfoli.github.io/Javascript-projects/12-todo-list.html)
 
-- [02 - Projetos Simples](https://lucasgfoli.github.io/Javascript-projects/10-dom-with-css/)
+- [02 - Projetos Simples](https://lucasgfoli.github.io/Javascript-projects/10-dom-with-css.html)
 
-- [03 - Jogo Pedra, Papel e Tesoura](https://lucasgfoli.github.io/Javascript-projects/https://lucasgfoli.github.io/Rock-Paper-Scissors/10-rock-paper-scissors.html/)
+- [03 - Jogo Pedra, Papel e Tesoura](https://lucasgfoli.github.io/Javascript-projects/https://lucasgfoli.github.io/Rock-Paper-Scissors/10-rock-paper-scissors.html)
 
 ## 📁 Como rodar localmente
 
