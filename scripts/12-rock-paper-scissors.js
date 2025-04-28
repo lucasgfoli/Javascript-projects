@@ -54,7 +54,7 @@ document.body.addEventListener('keydown', (event) => {
     autoPlayElement.innerHTML = 'Auto Play';
   }}
 
-});
+);
 
 document.querySelector('.js-reset-score-button')
   .addEventListener('click', () => {
