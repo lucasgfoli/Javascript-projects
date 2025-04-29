@@ -41,30 +41,52 @@ document.body.addEventListener('keydown', (event) => {
     playGame('scissors');
   else if (event.key === 'a')
     autoPlay();
-  else if (event.key === 'Backspace'){
-      score.wins = 0;
-      score.losses = 0;
-      score.ties = 0;
-      localStorage.removeItem('score');
-      updateScoreElement();}
- 
-    if (isAutoPlaying) {
-    autoPlayElement.innerHTML = 'Stop Playing';
-  } else {
-    autoPlayElement.innerHTML = 'Auto Play';
-  }}
-
-);
-
-document.querySelector('.js-reset-score-button')
-  .addEventListener('click', () => {
+  else if (event.key === 'Backspace') {
     score.wins = 0;
     score.losses = 0;
     score.ties = 0;
     localStorage.removeItem('score');
     updateScoreElement();
-    
+  }
+
+  if (isAutoPlaying) {
+    autoPlayElement.innerHTML = 'Stop Playing';
+  } else {
+    autoPlayElement.innerHTML = 'Auto Play';
+  }
+}
+
+);
+
+document.querySelector('.js-reset-score-button')
+  .addEventListener('click', () => {
+    const confirmBox = document.querySelector('.js-confirm-reset');
+
+    confirmBox
+      .innerHTML = `
+        <p>Are you sure to reset score</p>
+        <button class = "js-confirm-yes">Yes</button>
+        <button class = "js-confirm-no">No</button>
+        `;
+
+    confirmBox.style.display = 'block';
+
+    document.querySelector('.js-confirm-yes')
+      .addEventListener('click', () => {
+        score.wins = 0;
+        score.losses = 0;
+        score.ties = 0;
+        localStorage.removeItem('score');
+        updateScoreElement();
+        confirmBox.style.display = 'none';
+      });
+
+    document.querySelector('.js-confirm-no')
+      .addEventListener('click', () => {
+        confirmBox.style.display = 'none';
+      });
   });
+
 
 const autoPlayElement = document.querySelector('.js-autoplay-button');
 
