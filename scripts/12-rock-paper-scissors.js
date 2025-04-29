@@ -65,8 +65,8 @@ document.querySelector('.js-reset-score-button')
     confirmBox
       .innerHTML = `
         <p>Are you sure to reset score</p>
-        <button class = "js-confirm-yes">Yes</button>
-        <button class = "js-confirm-no">No</button>
+        <button class = "js-confirm-yes button-confirm-yes">Yes</button>
+        <button class = "js-confirm-no button-confirm-no">No</button>
         `;
 
     confirmBox.style.display = 'block';

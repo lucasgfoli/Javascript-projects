@@ -41,3 +41,8 @@ body {
     padding: 8px 15px;
     cursor: pointer;
   }
+
+  .button-confirm-no,
+  .button-confirm-yes{
+    cursor: pointer;
+  }
